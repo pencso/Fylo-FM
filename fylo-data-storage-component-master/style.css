@@ -62,11 +62,11 @@ section:first-of-type {
 
 
 section:nth-child(2) {
-    height: 150px;
+    height: 160px;
     width: 85%;
-    max-width: 580px;
+    max-width: 560px;
     background-color: var(--Dark-Blue);
-    padding: 2rem;
+    padding: 2.5rem 2rem;
     border-radius: 0.5rem;
     color: var(--Pale-Blue);
     font-family: 'Raleway', sans-serif;
@@ -78,6 +78,7 @@ section:nth-child(2) h2 {
     font-size: .9rem;
     font-weight: 400;
     text-align: center;
+    
 }
 
 section:nth-child(2) span {
@@ -148,29 +149,32 @@ section:nth-child(2) span {
 }
 
 footer {
-    background-color: var(--Dark-Blue);
+    position: fixed;
+    bottom: 0;
+
 }
 
 .attribution { 
     font-size: 11px; text-align: center; 
+    color: white;
 }
 .attribution a { 
-        color: hsl(228, 45%, 44%); 
+        color: rgb(36, 179, 214); 
 }
 
 @media screen and (min-width: 1050px) {
     body {
     background: url(/images/bg-desktop.png);
-    background-size: contain;
+    background-size: 100% 51%;
     background-position: bottom;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 100%;
     background-color: var(--Very-Dark-Blue);
     }
 
     main {
         flex-direction: row;
-        
+        gap: 2rem;
     }
     
     section:first-child {
@@ -179,6 +183,7 @@ footer {
 
     section:nth-child(2) {
         margin-bottom: -3rem;
+        
     }
 
     section:nth-child(2) h2 {
